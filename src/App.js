@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import './reset.css';
 import './webfonts.css';
 
