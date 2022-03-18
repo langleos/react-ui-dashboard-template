@@ -20,4 +20,49 @@ html{
     width: 24.5rem;
     padding: 2rem 1rem;
 }
- 
+
+.Header__menu-btn {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 2rem;
+    right: 1rem;
+
+    &:hover {
+        cursor: pointer;
+
+            span {
+                border-color: #F53C56;
+
+                &:nth-of-type(1), &:nth-of-type(3) {
+                    width: 1.8rem;
+                }
+            }
+    }
+
+        span {
+            position: absolute;
+            height: 0;
+            border-radius: 2px;
+            border-top: 3px solid #172B4D;
+            display: block;
+            right: 0;
+            transition: .3s ease-out;
+
+            &:nth-of-type(1) {
+                width: 1.2rem;
+                top: 23%;
+            }
+
+            &:nth-of-type(2) {
+                width: 1.8rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:nth-of-type(3) {
+                width: 0.8rem;
+                top: 70%;
+            }
+        }
+}
