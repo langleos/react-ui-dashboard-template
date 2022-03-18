@@ -7,7 +7,7 @@ function App() {
         <div className="App">
             <header className="Header">
                 <div className="Header__logo">
-                    <img src="/images/Product.png" alt="" />
+                    <img src="/images/logo.svg" alt="" />
                 </div>
                 <div className="Header__menu-btn">
                     <span></span><span></span><span></span>
