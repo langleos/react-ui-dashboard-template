@@ -1,6 +1,5 @@
 html{
     font-size: 62.5%;
-    font-family: 'Gotham', sans-serif;
   
     @media screen and (max-width: 1500px) {
         font-size: 58%;
@@ -9,6 +8,10 @@ html{
     @media screen and (max-width: 1230px) {
         font-size: 52%;
     }
+}
+
+body {
+    font-family: 'Gotham', sans-serif;
 }
   
 
@@ -68,5 +71,91 @@ html{
                 width: 0.8rem;
                 top: 70%;
             }
+        }
+}
+
+.Header__navigation {
+    margin-top: 3.6rem;
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+
+                li {
+                    display: block;
+
+                    &.Header__navigation-item--active {
+
+                            a {
+                                background-color: #F6F9FC;
+                            }
+                    }
+
+                    &.Header__navigation-item--active {
+
+                            span {
+                                font-weight: 500;
+                            }
+                    }
+
+                    &.Header__navigation-item--purple {
+
+
+                        &.Header__navigation-item--active, &:hover {
+
+                                span {
+                                    color: #7764E4;
+                                }
+                        }
+
+                            svg {
+
+                                    path {
+                                        stroke: #7764E4;
+                                    }
+                            }
+                    }
+
+                    &.Header__navigation-item--red {
+
+
+                        &.Header__navigation-item--active, &:hover {
+
+                                span {
+                                    color: #F53C56;
+                                }
+                        }
+
+                            svg {
+
+                                    path {
+                                        stroke: #F53C56;
+                                    }
+                            }
+                    }
+
+
+                        a {
+                            font-size: 0;
+                            display: block;
+                            padding: 1.6rem 2rem;
+                            border-radius: 0.5rem;
+
+                                .Header__navigation-item-icon {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+
+                                span {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    margin-left: 0.9rem;
+                                    font-size: 1.3rem;
+                                    color: rgba(#172B4D, 0.8);
+                                    font-weight: 400;
+                                    transition: .3s ease-out;
+                                }
+                        }
+                }
         }
 }
