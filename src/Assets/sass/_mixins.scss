@@ -1,0 +1,16 @@
+@mixin menuSvg($color) {
+    
+    &.Header__navigation-item--active, &:hover {
+
+        span {
+            color: $color;
+        }
+    }
+
+        svg {
+
+                path, line, rect, polyline, circle {
+                    stroke: $color;
+                }
+        }
+}

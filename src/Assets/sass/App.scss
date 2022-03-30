@@ -1,3 +1,5 @@
+@import "_mixins";
+
 html{
     font-size: 62.5%;
   
@@ -99,40 +101,25 @@ body {
                     }
 
                     &.Header__navigation-item--purple {
-
-
-                        &.Header__navigation-item--active, &:hover {
-
-                                span {
-                                    color: #7764E4;
-                                }
-                        }
-
-                            svg {
-
-                                    path {
-                                        stroke: #7764E4;
-                                    }
-                            }
+                        @include menuSvg(#7764E4);
                     }
 
                     &.Header__navigation-item--red {
-
-
-                        &.Header__navigation-item--active, &:hover {
-
-                                span {
-                                    color: #F53C56;
-                                }
-                        }
-
-                            svg {
-
-                                    path {
-                                        stroke: #F53C56;
-                                    }
-                            }
+                        @include menuSvg(#F53C56);
                     }
+
+                    &.Header__navigation-item--blue-light {
+                        @include menuSvg(#11CDEF);
+                    }
+
+                    &.Header__navigation-item--orange {
+                        @include menuSvg(#FB6340);
+                    }
+
+                    &.Header__navigation-item--yellow {
+                        @include menuSvg(#FEB969);
+                    }
+
 
 
                         a {

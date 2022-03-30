@@ -1,5 +1,5 @@
 import './reset.css';
-import './App.scss';
+import './Assets/sass/App.scss';
 import './webfonts.css';
 import HeaderMenuItem from './Components/HeaderMenuItem/HeaderMenuItem.js';
 
@@ -17,6 +17,12 @@ function App() {
                     <ul>
                         <HeaderMenuItem icon="HomeIcon" title="Home" extraClassNames="Header__navigation-item--purple Header__navigation-item--active"/>
                         <HeaderMenuItem icon="InboxIcon" title="Inbox" extraClassNames="Header__navigation-item--red"/>
+                        <HeaderMenuItem icon="ProductsIcon" title="Products" extraClassNames="Header__navigation-item--blue-light"/>
+                        <HeaderMenuItem icon="InvoicesIcon" title="Invoices" extraClassNames="Header__navigation-item--orange"/>
+                        <HeaderMenuItem icon="MessagesIcon" title="Messages" extraClassNames="Header__navigation-item--yellow"/>
+                        <HeaderMenuItem icon="CalendarIcon" title="Calendar" extraClassNames="Header__navigation-item--red"/>
+                        <HeaderMenuItem icon="CustomersIcon" title="Customers" extraClassNames="Header__navigation-item--blue-light"/>
+                        <HeaderMenuItem icon="SettingsIcon" title="Settings" extraClassNames="Header__navigation-item--orange"/>
                     </ul>
                 </nav>
             </header>
