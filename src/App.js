@@ -6,7 +6,7 @@ import HeaderMenuItem from './Components/HeaderMenuItem/HeaderMenuItem.js';
 function App() {
     return (
         <div className="App">
-            <header className="Header">
+            <header className="Header Header--collapsed">
                 <div className="Header__logo">
                     <img src="/images/logo.svg" alt="" />
                 </div>

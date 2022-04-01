@@ -2,6 +2,7 @@
 
 html{
     font-size: 62.5%;
+    background: #F1F3F9;
   
     @media screen and (max-width: 1500px) {
         font-size: 58%;
@@ -24,10 +25,13 @@ body {
     height: 100vh;
     width: 24.5rem;
     padding: 2rem 1rem;
+    background: white;
+    @include transition;
 }
 
 .Header__logo {
     max-width: 10rem;
+    @include transition;
 }
 
 .Header__menu-btn {
@@ -56,7 +60,7 @@ body {
             border-top: 3px solid #172B4D;
             display: block;
             right: 0;
-            transition: .3s ease-out;
+            @include transition;
 
             &:nth-of-type(1) {
                 width: 1.2rem;
@@ -85,6 +89,9 @@ body {
 
                 li {
                     display: block;
+                    width: 5.4rem;
+                    white-space: nowrap;
+                    @include transition;
 
                     &.Header__navigation-item--active {
 
@@ -127,6 +134,7 @@ body {
                             display: block;
                             padding: 1.6rem 2rem;
                             border-radius: 0.5rem;
+                            @include transition;
 
                                 .Header__navigation-item-icon {
                                     display: inline-block;
@@ -140,7 +148,45 @@ body {
                                     font-size: 1.3rem;
                                     color: rgba(#172B4D, 0.8);
                                     font-weight: 400;
-                                    transition: .3s ease-out;
+                                    @include transition;
+                                }
+                        }
+                }
+        }
+}
+
+.Header.Header--collapsed {
+    width: 7.5rem;
+
+        .Header__logo {
+            width: 0;
+            overflow: hidden;
+        }
+
+        .Header__menu-btn {
+            right: 50%;
+            @include transform(translateX(50%));
+
+                span {
+                    width: 1.8rem;
+                    right: 0.6rem;
+                }
+        }
+
+        .Header__navigation {
+
+                ul {
+
+                        li {
+                            width: 5.4rem;
+                            overflow: hidden;
+
+                                a {
+                                    padding: 1.6rem;
+
+                                        span {
+                                            opacity: 0;
+                                        }
                                 }
                         }
                 }
