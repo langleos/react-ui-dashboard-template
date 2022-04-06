@@ -2,11 +2,13 @@ import './reset.css';
 import './Assets/sass/App.scss';
 import './webfonts.css';
 import HeaderMenuItem from './Components/HeaderMenuItem/HeaderMenuItem.js';
+import {ReactComponent as BellIcon} from './Assets/svg/bell.svg';
+
 
 function App() {
     return (
         <div className="App">
-            <header className="Header Header--collapsed">
+            <header className="Header">
                 <div className="Header__logo">
                     <img src="/images/logo.svg" alt="" />
                 </div>
@@ -26,6 +28,15 @@ function App() {
                     </ul>
                 </nav>
             </header>
+            <main>
+                <div className="Topbar">
+                    <div className="Container">
+                        <a href="javascript();" className='NotificationsBell'>
+                            <BellIcon />
+                        </a>
+                    </div>
+                </div>
+            </main>
         </div>
     );
 }

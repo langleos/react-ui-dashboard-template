@@ -1,5 +1,7 @@
 @import "_mixins";
 
+$red: #F53C56;
+
 html{
     font-size: 62.5%;
     background: #F1F3F9;
@@ -31,7 +33,15 @@ body {
 
 .Header__logo {
     max-width: 10rem;
+    height: 2.6rem;
     @include transition;
+
+        img {
+            height: 100%;
+            max-width: initial;
+            width: auto;
+            @include transition;
+        }
 }
 
 .Header__menu-btn {
@@ -89,7 +99,6 @@ body {
 
                 li {
                     display: block;
-                    width: 5.4rem;
                     white-space: nowrap;
                     @include transition;
 
@@ -161,6 +170,10 @@ body {
         .Header__logo {
             width: 0;
             overflow: hidden;
+
+                img {
+                    opacity: 0;
+                }
         }
 
         .Header__menu-btn {
@@ -192,3 +205,39 @@ body {
                 }
         }
 }
+
+main {
+    padding-left: 24.5rem;
+}
+
+.Container {
+    padding: 0 3rem;
+    display: block;
+    width: 100%;
+}
+
+.Topbar {
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #172B4D;
+    text-align: right;
+}
+
+    .NotificationsBell {
+
+        &:hover {
+
+                svg path {
+                    stroke: $red;
+                }
+        }
+
+            svg {
+
+                    path {
+                        @include transition;
+                    }
+            }
+    }
