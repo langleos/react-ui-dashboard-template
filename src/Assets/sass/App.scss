@@ -225,7 +225,7 @@ main {
     text-align: right;
 }
 
-    .NotificationsBell {
+    .Topbar__notifications-btn {
 
         &:hover {
 
@@ -240,4 +240,25 @@ main {
                         @include transition;
                     }
             }
+    }
+
+    .Topbar__help-btn {
+        margin-left: 4rem;
+
+        &:hover {
+
+            svg {
+
+                    path, circle, line {
+                        stroke: $red;
+                    }
+            }
+        }
+
+        svg {
+
+                path, circle, line {
+                    @include transition;
+                }
+        }
     }

@@ -3,6 +3,7 @@ import './Assets/sass/App.scss';
 import './webfonts.css';
 import HeaderMenuItem from './Components/HeaderMenuItem/HeaderMenuItem.js';
 import {ReactComponent as BellIcon} from './Assets/svg/bell.svg';
+import {ReactComponent as HelpIcon} from './Assets/svg/help.svg';
 
 
 function App() {
@@ -31,8 +32,11 @@ function App() {
             <main>
                 <div className="Topbar">
                     <div className="Container">
-                        <a href="javascript();" className='NotificationsBell'>
+                        <a href="javascript();" className='Topbar__notifications-btn'>
                             <BellIcon />
+                        </a>
+                        <a href="javascript();" className='Topbar__help-btn'>
+                            <HelpIcon />
                         </a>
                     </div>
                 </div>
