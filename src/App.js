@@ -32,11 +32,15 @@ function App() {
             <main>
                 <div className="Topbar">
                     <div className="Container">
-                        <a href="javascript();" className='Topbar__notifications-btn'>
+                        <a href="javascript();" className='Topbar__item Topbar__notifications-btn'>
                             <BellIcon />
                         </a>
-                        <a href="javascript();" className='Topbar__help-btn'>
+                        <a href="javascript();" className='Topbar__item Topbar__help-btn'>
                             <HelpIcon />
+                        </a>
+                        <a href="javascript();" className='Topbar__item Topbar__profile-btn'>
+                            <img src="/images/profile-image.png" alt="" />
+                            <p>Joe Doe</p>
                         </a>
                     </div>
                 </div>
