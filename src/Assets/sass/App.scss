@@ -1,7 +1,16 @@
 @import "_mixins";
 
 $red: #F53C56;
+$green: #2dce98;
 $darkBlue: #172B4D;
+
+.color-red {
+    color: $red;
+}
+
+.color-green {
+    color: $green;
+}
 
 html{
     font-size: 62.5%;
@@ -353,3 +362,68 @@ main {
                         }
                 }
         }
+
+.PageContent {
+    border-top: 20rem solid $darkBlue;
+
+        .Container {
+            margin-top: -20rem;
+        }
+}
+
+.TileItems {
+    display: grid;
+    gap: 4rem;
+
+        &.TileItems--four-per-row {
+            grid-template-columns: repeat(4, 1fr);
+        }
+}
+
+    .TileItem {
+        background: white;
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+
+        .TileItem__inner {
+            display: grid;
+            grid-template-columns: calc(100% - 5rem) 5rem;
+            gap: 1.7rem 0;
+            align-items: center;
+        }
+
+            .TileItem__content {
+                padding-right: 1.5rem;
+            }
+
+                    .TileItem__title {
+                        font-size: 12px;
+                        color: #8898AA;
+                        font-weight: 600;
+                        margin-bottom: 1rem;
+                        line-height: 1;
+                        text-transform: uppercase;
+                    }
+
+                    .TileItem__value {
+                        font-size: 1.8rem;
+                        color: #4D4F5C;
+                        margin: 0;
+                        line-height: 1;
+                        font-weight: 500;
+                    }
+
+                    .TileItem__icon {
+                        height: 5rem;
+                    }
+
+            .TileItem__footer {
+                grid-column: 1/3;
+
+                    p {
+                        margin: 0;
+                        font-size: 14px;
+                        color: #4D4F5C;
+                    }
+            }

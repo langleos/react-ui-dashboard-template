@@ -2,6 +2,7 @@ import './reset.css';
 import './Assets/sass/App.scss';
 import './webfonts.css';
 import HeaderMenuItem from './Components/HeaderMenuItem/HeaderMenuItem.js';
+import TileWithValueAndIcon from './Components/TileWithValueAndIcon/TileWithValueAndIcon.js';
 import {ReactComponent as BellIcon} from './Assets/svg/bell.svg';
 import {ReactComponent as HelpIcon} from './Assets/svg/help.svg';
 import {ReactComponent as HomeIcon} from './Assets/svg/menu-icons/home.svg';
@@ -58,6 +59,16 @@ function App() {
                                 <span>-</span>
                                 <a href="javascript();">Dashboard</a>
                             </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="PageContent">
+                    <div className="Container">
+                        <div className="TileItems TileItems--four-per-row">
+                            <TileWithValueAndIcon icon="UpIcon" title="Total traffic" value="123,456" footerTextValue="+3.48%" footerTextText="Since last month" footerTextValueColor="green"/>
+                            <TileWithValueAndIcon icon="DownIcon" title="New Users" value="3,456" footerTextValue="-3.48%" footerTextText="Since last month" footerTextValueColor="red"/>
+                            <TileWithValueAndIcon icon="SalesIcon" title="Sales" value="456" footerTextValue="+3.48%" footerTextText="Since last month" footerTextValueColor="green"/>
+                            <TileWithValueAndIcon icon="ChartIcon" title="Performance" value="48.5%" footerTextValue="+3.48%" footerTextText="Since last month" footerTextValueColor="green"/>
                         </div>
                     </div>
                 </div>
