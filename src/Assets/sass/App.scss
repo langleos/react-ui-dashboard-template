@@ -1,6 +1,7 @@
 @import "_mixins";
 
 $red: #F53C56;
+$darkBlue: #172B4D;
 
 html{
     font-size: 62.5%;
@@ -217,11 +218,11 @@ main {
 }
 
 .Topbar {
-    padding: 2rem 0;
+    padding: 1.6rem 0;
     position: sticky;
     top: 0;
     width: 100%;
-    background: #172B4D;
+    background: $darkBlue;
     text-align: right;
 }
 
@@ -269,7 +270,7 @@ main {
     }
 
     .Topbar__profile-btn {
-        
+
         &:hover {
 
                 p {
@@ -294,3 +295,61 @@ main {
                 @include transition;
             }
     }
+
+.PageHeader {
+    background: $darkBlue;
+    padding: 4rem 0;
+    
+        .Container {
+            display: flex;
+            align-items: center;
+        }
+
+            h1 {
+                margin: 0;
+                color: white;
+                font-size: 2.5rem;
+                font-weight: 800;
+                padding-right: 4rem;
+            }
+}
+
+    .Breadcrumbs {
+        
+            p {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 12px;
+                color: white;
+                margin: 0;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        @include transition;
+
+                        &:hover {
+                            color: $red;
+                        }
+                    }
+
+                    span {
+                        display: inline-block;
+                        margin: 0 1.5rem;
+                    }
+            }
+    }
+
+        .Breadcrumbs__icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 1.5rem;
+            height: 2.2rem;
+
+                svg {
+
+                        path, line, polyline, circle {
+                            stroke: white;
+                        }
+                }
+        }

@@ -4,6 +4,8 @@ import './webfonts.css';
 import HeaderMenuItem from './Components/HeaderMenuItem/HeaderMenuItem.js';
 import {ReactComponent as BellIcon} from './Assets/svg/bell.svg';
 import {ReactComponent as HelpIcon} from './Assets/svg/help.svg';
+import {ReactComponent as HomeIcon} from './Assets/svg/menu-icons/home.svg';
+
 
 
 function App() {
@@ -42,6 +44,21 @@ function App() {
                             <img src="/images/profile-image.png" alt="" />
                             <p>Joe Doe</p>
                         </a>
+                    </div>
+                </div>
+                <div className="PageHeader">
+                    <div className="Container">
+                        <h1>Home</h1>
+                        <div className="Breadcrumbs">
+                            <div className="Breadcrumbs__icon">
+                                <HomeIcon />
+                            </div>
+                            <p>
+                                <a href="javascript();">Home</a>
+                                <span>-</span>
+                                <a href="javascript();">Dashboard</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </main>
