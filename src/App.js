@@ -70,6 +70,20 @@ function App() {
                             <TileWithValueAndIcon icon="SalesIcon" title="Sales" value="456" footerTextValue="+3.48%" footerTextText="Since last month" footerTextValueColor="green"/>
                             <TileWithValueAndIcon icon="ChartIcon" title="Performance" value="48.5%" footerTextValue="+3.48%" footerTextText="Since last month" footerTextValueColor="green"/>
                         </div>
+                        <div className="TileItems TileItems--three-one-per-row">
+                            <div className="TileItem">
+                                <div className="TileItem__header">
+                                    <div className="TileItem__header-left-col">
+                                        <p className="TileItem__title">Overview</p>
+                                        <p className="TileItem__big-title">Sales Values</p>
+                                    </div>
+                                    <div className="TileItem__header-right-col">
+                                        <a href="javascript();" className="btn btn--primary">Month</a>
+                                        <a href="javascript();" className="btn btn--secondary">Week</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>

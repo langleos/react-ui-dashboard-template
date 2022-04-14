@@ -3,6 +3,8 @@
 $red: #F53C56;
 $green: #2dce98;
 $darkBlue: #172B4D;
+$purple: #7764E4;
+$blue: #11CDEF;
 
 .color-red {
     color: $red;
@@ -29,6 +31,39 @@ body {
     font-family: 'Gotham', sans-serif;
 }
   
+.btn {
+    display: inline-block;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    white-space: nowrap;
+    background: $purple;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: 1px solid $purple;
+    @include transition;
+    @include boxshadow(0px 3px 6px 0px rgba(black, 0.11));
+
+    &:hover {
+        background: $blue;
+        text-decoration: none;
+        border-color: $blue;
+        color: white;
+    }
+}
+
+.btn.btn--secondary {
+    background: white;
+    color: $purple;
+    border-color: $purple;
+
+    &:hover {
+        background: $purple;
+        color: white;
+    }
+}
 
 .Header {
     position: fixed;
@@ -364,19 +399,24 @@ main {
         }
 
 .PageContent {
-    border-top: 20rem solid $darkBlue;
+    border-top: 24rem solid $darkBlue;
 
         .Container {
-            margin-top: -20rem;
+            margin-top: -24rem;
         }
 }
 
 .TileItems {
     display: grid;
     gap: 4rem;
+    margin-bottom: 4rem;
 
         &.TileItems--four-per-row {
             grid-template-columns: repeat(4, 1fr);
+        }
+
+        &.TileItems--three-one-per-row {
+            grid-template-columns: 65% 35%;
         }
 }
 
@@ -393,6 +433,26 @@ main {
             align-items: center;
         }
 
+            .TileItem__header {
+                display: flex;
+                align-items: center;
+            }
+
+                .TileItem__header-left-col {
+                    flex: 0 0 50%;
+                    width: 50%;
+                }
+
+                .TileItem__header-right-col {
+                    flex: 0 0 50%;
+                    width: 50%;
+                    text-align: right;
+
+                        .btn {
+                            margin-left: 1.5rem;
+                        }
+                }
+
             .TileItem__content {
                 padding-right: 1.5rem;
             }
@@ -404,6 +464,13 @@ main {
                         margin-bottom: 1rem;
                         line-height: 1;
                         text-transform: uppercase;
+                    }
+
+                    .TileItem__big-title {
+                        font-size: 1.8rem;
+                        color: $darkBlue;
+                        font-weight: 600;
+                        margin-top: 0.9rem;
                     }
 
                     .TileItem__value {

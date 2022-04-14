@@ -43,3 +43,9 @@
         color: $color;
     }
 }
+
+@mixin boxshadow($property) {
+    -webkit-box-shadow: $property;
+    -moz-box-shadow: $property;
+    box-shadow: $property;
+  } 
