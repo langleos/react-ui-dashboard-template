@@ -82,6 +82,20 @@ function App() {
                                         <a href="javascript();" className="btn btn--secondary">Week</a>
                                     </div>
                                 </div>  
+                                <div className="TileItem__content">
+                                    <img src="/images/chart-1.png" alt="" />
+                                </div>
+                            </div>
+                            <div className="TileItem">
+                                <div className="TileItem__header">
+                                    <div className="TileItem__header-left-col">
+                                        <p className="TileItem__title">PERFORMANCE</p>
+                                        <p className="TileItem__big-title">Total Orders</p>
+                                    </div>
+                                </div>  
+                                <div className="TileItem__content">
+                                    <img src="/images/chart-2.png" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>

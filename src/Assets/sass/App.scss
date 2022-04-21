@@ -400,6 +400,7 @@ main {
 
 .PageContent {
     border-top: 24rem solid $darkBlue;
+    background: #f1f3f9;
 
         .Container {
             margin-top: -24rem;
@@ -416,7 +417,7 @@ main {
         }
 
         &.TileItems--three-one-per-row {
-            grid-template-columns: 65% 35%;
+            grid-template-columns: 3.5fr 1.7fr;
         }
 }
 
@@ -436,6 +437,7 @@ main {
             .TileItem__header {
                 display: flex;
                 align-items: center;
+                margin-bottom: 3rem;
             }
 
                 .TileItem__header-left-col {
@@ -455,6 +457,10 @@ main {
 
             .TileItem__content {
                 padding-right: 1.5rem;
+
+                    img {
+                        width: 100%;
+                    }
             }
 
                     .TileItem__title {
@@ -475,7 +481,7 @@ main {
 
                     .TileItem__value {
                         font-size: 1.8rem;
-                        color: #4D4F5C;
+                        color: #4D4F5C; 
                         margin: 0;
                         line-height: 1;
                         font-weight: 500;
